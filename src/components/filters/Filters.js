@@ -11,10 +11,14 @@ const Filters = ({ setStatus, setPageNumber, setGender, setSpecies }) => {
         setSpecies("");
         window.location.reload(false);
     }
-    return <div className="col-3">
-        <div className="text-center fw-bold fs-4 mb-2">Filter</div>
-        <div onClick={clear} style={{ cursor: "pointer" }} className="text-center text-primary text-decoration-underline mb-4">
-            Clear filters
+    return <div className="col-lg-3 col-12 mb-5">
+        <div className="d-flex justify-content-between align-items-center">
+            <div className="text-center fw-bold fs-4 mb-2">Filter</div>
+            <div onClick={clear}
+                style={{ cursor: "pointer" }}
+                className="text-center text-primary text-decoration-underline mb-2">
+                Clear filters
+            </div>
         </div>
         <div className="accordion" id="accordionExample">
             <Status setPageNumber={setPageNumber} setStatus={setStatus} />

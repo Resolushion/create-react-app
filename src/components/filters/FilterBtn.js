@@ -3,7 +3,7 @@ import React from 'react'
 const FilterBtn = ({ name, index, items, task, setPageNumber }) => {
     return (
         <div>
-            <style jsx>
+            <style jsx="true">
                 {`
 
                 .x:checked + label {
@@ -16,7 +16,7 @@ const FilterBtn = ({ name, index, items, task, setPageNumber }) => {
                 }
                 `}
             </style>
-            <div class="form-check">
+            <div className="form-check">
                 <input onClick={() => {
                     setPageNumber(1);
                     task(items);
@@ -24,7 +24,7 @@ const FilterBtn = ({ name, index, items, task, setPageNumber }) => {
                     className="form-check-input x"
                     type="radio" name={name}
                     id={`${name}-${index}`} />
-                <label class="btn btn-outline-primary" for={`${name}-${index}`}>
+                <label className="btn btn-outline-primary" htmlFor={`${name}-${index}`}>
                     {items}
                 </label>
             </div>

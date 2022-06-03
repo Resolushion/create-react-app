@@ -1,16 +1,36 @@
 $radius : 10px;
 
-.cards {
-    border: 2px solid blue;
+.card {
+    border: 2px solid gray;
     border-radius: $radius;
 }
-
 .img {
     border-radius: $radius $radius 0 0;
+}
+.modalBtn {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    padding: 5px;
+}
+.badgeModal {
+    border-radius: 0 0 $radius $radius;
+}
+.infoName {
+    font-size: 12px;
+}
+.info {
+    font-size: 11px;
 }
 
 .badge {
     top: 10px;
     right: 20px;
     font-size: 17px;
+}
+.hoverC {
+    &:hover {
+        -webkit-animation: shake 1s;
+    animation: shake 1s;
+    }
 }

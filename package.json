@@ -7,6 +7,8 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "10.4.5",
     "bootstrap": "^5.1.3",
+    "hover.css": "^2.3.2",
+    "mdb-react-ui-kit": "^3.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-paginate": "^8.1.3",
