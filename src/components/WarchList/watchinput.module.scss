@@ -1,0 +1,10 @@
+.suggestion {
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.suggestion:hover {
+    transition: all .8s ease;
+    background-color: gray;
+    color: white;
+}
